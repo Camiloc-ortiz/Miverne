@@ -1,673 +1,884 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miverne Perfumería | Fragancias con Identidad</title>
+    <meta
+      name="description"
+      content="Descubre fragancias únicas seleccionadas con curaduría tolimense. Asesoría personalizada y conexión con tu esencia en Ibagué."
+    />
+    <!-- Fuente: DM Sans (se asume uso desde Google Fonts; si se quiere self-host, reemplazar) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--Es un resource hint (sugerencia de recurso) que le dice al navegador: “Oye, voy a necesitar algo de este dominio pronto, empieza ya a abrir la conexión.”-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miverne Perfumería | Fragancias con Identidad</title>
-  <meta name="description" content="Descubre fragancias únicas seleccionadas con curaduría tolimense. Asesoría personalizada y conexión con tu esencia en Ibagué." />
-  <!-- Fuente: DM Sans (se asume uso desde Google Fonts; si se quiere self-host, reemplazar) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" /> <!--Es un resource hint (sugerencia de recurso) que le dice al navegador: “Oye, voy a necesitar algo de este dominio pronto, empieza ya a abrir la conexión.”-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-
-<body>
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/573214978179" aria-label="Chatear por WhatsApp" class="whatsapp-float" target="_blank" rel="noopener">
-    <!-- Placeholder SVG logo cuadrado; reemplazar por imagen si se prefiere -->
-    <div class="whatsapp-inner" aria-hidden="true">
-      <img class="whatsapp-icon" src="img/WhatsApp_Brand2.png" alt="Icono de WhatsApp">
-    </div>
-  </a>
-
-
-
-  <!-- Header (sticky) -->
-  <header class="site-header" role="banner">
-    <div class="container">
-      <div class="logo" aria-label="Miverne Perfumería">
-        <!-- Reemplazar con logo real -->
-        <div class="logo-placeholder">
-          <a href="#inicio">
-            <img src="img/MainLogo.png" height="80px" width="274.67px" alt="Logo de Miverne">
-          </a>
-        </div>
+  <body>
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/573214978179"
+      aria-label="Chatear por WhatsApp"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+    >
+      <!-- Placeholder SVG logo cuadrado; reemplazar por imagen si se prefiere -->
+      <div class="whatsapp-inner" aria-hidden="true">
+        <img
+          class="whatsapp-icon"
+          src="img/WhatsApp_Brand2.png"
+          alt="Icono de WhatsApp"
+        />
       </div>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#destacados">DESTACADOS</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
-          
-        </ul>
-      </nav>
-      <a class="whatsapp-header" href="https://wa.me/573214978179" aria-label="Chatear por WhatsApp" target="_blank" rel="noopener"> 
-        Escríbenos
-        <div>
-            <img class="whatsapp-icon" src="img/WhatsApp_Brand2.png" alt="Icono de WhatsApp">
-        </div>
-      </a>
-    </div>
-  </header>
+    </a>
 
-
-
-  <main>
-    <!-- INICIO -->
-    <section class="hero" id="inicio" aria-label="Nuestros perfumes destacados">
+    <!-- Header (sticky) -->
+    <header class="site-header" role="banner">
       <div class="container">
-        <div class="hero-content">
-          <h2 class="eyebrow">Fragancias para todos, en un solo lugar</h2>
-          <h1 class="hero-title">Perfumes únicos y con carácter propio</h1>
-          <p class="hero-subtitle">
-            Con nuestra colección exclusiva de aromas, descubre la esencia que realmente te representa de forma natural, local y memorable.
-          </p>
-          <!-- Remplazar por el link del catalogo -->
-          <a href="#"  class="btn-primary" aria-label="Descargar catálogo">Descarga nuestro catálogo</a>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- NOSOTROS -->
-    <section class="why-us" id="nosotros" aria-label="Por qué elegir Miverne">
-      <div class="container">
-        <h2 class="eyebrow-why-us">¿Por qué elegir Miverne?</h2>
-        <h1 class="why-us-title">
-          La perfumería que huele a identidad, calidad y región.
-        </h1>
-        <p>
-          Nuestro catálogo está diseñado para conectar con quienes buscan fragancias únicas, servicio cercano y una experiencia auténtica hecha en Ibagué.
-        </p>
-
-        <div class="features-grid">
-          
-          <div class="feature">
-            <img src="img/FraganciasSelecionadas.png" alt="" class="feature-icon" loading="lazy" height="60px" width="30px"/>
-            <h4>Fragancias seleccionadas</h4>
-            <p>Curaduría exclusiva de perfumes de alta calidad, con carácter y personalidad.</p>
-          </div>
-
-          <div class="feature">
-            <img src="img/InspiracionTolimense.png" alt="" class="feature-icon" loading="lazy" height="60px" width="67px" />
-            <h4>Inspiración tolimense</h4>
-            <p>Aromas que evocan paisajes, raíces y esencia local con orgullo regional.</p>
-          </div>
-
-          <div class="feature">
-            <img src="img/AtencionCercana.png" alt="" class="feature-icon" loading="lazy" height="60px" width="54px" />
-            <h4>Atención cercana</h4>
-            <p>Te asesoramos con agilidad, calidez y enfoque en lo que realmente buscas.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-
-    <!-- DESTACADOS -->
-    <section class="personas" aria-label="Segmentos de cliente y fragancias" id="destacados">
-
-      <div class="container">
-        <h2 class="eyebrow-fragancias">Nuestros perfumes destacados</h2>
-        <h1 class="fragancias-title">
-          Encuentra el aroma perfecto según tu estilo, edda y personalidad. 
-        </h1>
-        <p>
-          Te presentamos una selección curada para cada tipo de cliente, con fragancias que hablan por ti.
-        </p>
-
-
-
-        <!-- Persona: Hombre Audaz -->
-        <div class="persona-group">
-
-          <div class="persona-header-hombre">
-            <h4>Hombre Audaz</h4>
-            <p>Para el joven arriesgado, atrevido y con personalidad vibrante.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-group"-->
-
-
-
-
-        <!-- Persona: Mujer Encantadora -->
-        <div class="persona-group">
-
-          <div class="persona-header-mujer">
-            <h4>Mujer Encantadora</h4>
-            <p>Para la joven soñadora, dulce, alegre y naturalmente irresistible.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-group"-->
-
-
-
-
-        <!-- Persona: Hombre Seguro -->
-        <div class="persona-group">
-
-          <div class="persona-header-hombre">
-            <h4>Hombre Seguro</h4>
-            <p>Para el hombre adulto moderno que sabe lo que quiere y cómo lo expresa.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-group"-->
-
-
-
-
-        <!-- Persona: Mujer Decidida -->
-        <div class="persona-group">
-
-          <div class="persona-header-mujer">
-            <h4>Mujer Decidida</h4>
-            <p>Para la mujer adulta contemporánea, elegante, activa y auténtica.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-group"-->
-
-
-
-
-        <!-- Persona: Hombre Distinguido -->
-        <div class="persona-group">
-
-          <div class="persona-header-hombre">
-            <h4>Hombre Distinguido</h4>
-            <p>Para el hombre maduro que proyecta presencia, carácter y estilo clásico.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card hombre">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-hombre">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-group"-->
-
-
-
-
-        <!-- Persona: Mujer Sofisticada -->
-        <div class="persona-group">
-
-          <div class="persona-header-mujer">
-            <h4>Mujer Sofisticada</h4>
-            <p>Para la mujer madura que deja huella con su elegancia y seguridad.</p>
-          </div>
-
-          <div class="carrousel">
-
-            <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
-
-              <div class="contenido-carrousel">
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>1</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>2</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>3</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>4</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-                <article class="card mujer">
-                  <div class="card-image">
-                    <img src="img/Calvin Klein Eternity Summer.jpg" alt="Calvin Klein Eternity Summer" loading="lazy" />
-                  </div>
-                  <div class="card-content-mujer">
-                    <h5>5</h5>
-                    <p>Frescura cálida con toque tropical.</p>
-                  </div>
-                </article>
-
-              </div> <!--class="contenido-carrousel"-->
-
-            <button class="btn-carrusel next" aria-label="Siguiente">›</button>
-        
-          </div> <!--class="carrousel"-->  
-        
-        </div> <!--class="persona-gSofisticada-->
-        
-      </div> <!--class="container"-->
-
-    </section> <!--class="personas"-->
-
-    
-
-    <!-- Contacto / Formulario -->
-    <section class="contact" id="contacto" aria-label="Contacto y asesoría personalizada">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Conecta con tu fragancia.</h3>
-            <p>Conecta con tu fragancia.</p>
-            <dl class="contact-data">
-              <div class="info-item">
-                <dt>Teléfono:</dt>
-                <dd>+57 321 497 8179</dd>
-              </div>
-              <div class="info-item">
-                <dt>Email:</dt>
-                <dd>perfumeria@miverne.com</dd>
-              </div>
-              <div class="info-item">
-                <dt>Dirección:</dt>
-                <dd>Casa 3 Barrio Miramar, Ibagué</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="contact-form" id="escribenos">
-            <form aria-label="Formulario de contacto">
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Nombre Apellido" />
-              </div>
-              <div class="form-group">
-                <label for="email">Correo</label>
-                <input type="email" id="email" name="email" required placeholder="perfumeria@miverne.com" />
-              </div>
-              <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="+57 321 497 8179" />
-              </div>
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí"></textarea>
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn secondary">Enviar</button>
-              </div>
-            </form>
+        <div class="logo" aria-label="Miverne Perfumería">
+          <!-- Reemplazar con logo real -->
+          <div class="logo-placeholder">
+            <a href="#inicio">
+              <img
+                src="img/MainLogo.png"
+                height="80px"
+                width="274.67px"
+                alt="Logo de Miverne"
+              />
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <section class="redes-sociales" aria-label="Redes Sociales de Miverne">
-      <h1>Nuestras Redes Sociales</h1>
-      <div class="redes-icons">
-        <a href="https://www.instagram.com/miverneibague/" aria-label="Instagram de Miverne" target="_blank">
-          <img src="img/Instagram.png" height= "80px" width= "80px" alt="Instagram" />
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#destacados">DESTACADOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <a
+          class="whatsapp-header"
+          href="https://wa.me/573214978179"
+          aria-label="Chatear por WhatsApp"
+          target="_blank"
+          rel="noopener"
+        >
+          Escríbenos
+          <div>
+            <img
+              class="whatsapp-icon"
+              src="img/WhatsApp_Brand2.png"
+              alt="Icono de WhatsApp"
+            />
+          </div>
         </a>
       </div>
-      <div>
-        <div class="logo" aria-label="Miverne Perfumería">
-        <!-- Reemplazar con logo real -->
-        <div class="logo-footer">
-          <a href="#inicio">
-            <img src="img/MainLogoBrand2.png" height="200px" width="686.68px" alt="Logo de Miverne">
+    </header>
+
+    <main>
+      <!-- INICIO -->
+      <section
+        class="hero"
+        id="inicio"
+        aria-label="Nuestros perfumes destacados"
+      >
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="eyebrow">Fragancias para todos, en un solo lugar</h2>
+            <h1 class="hero-title">Perfumes únicos y con carácter propio</h1>
+            <p class="hero-subtitle">
+              Con nuestra colección exclusiva de aromas, descubre la esencia que
+              realmente te representa de forma natural, local y memorable.
+            </p>
+            <!-- Remplazar por el link del catalogo -->
+            <a href="#" class="btn-primary" aria-label="Descargar catálogo"
+              >Descarga nuestro catálogo</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section class="why-us" id="nosotros" aria-label="Por qué elegir Miverne">
+        <div class="container">
+          <h2 class="eyebrow-why-us">¿Por qué elegir Miverne?</h2>
+          <h1 class="why-us-title">
+            La perfumería que huele a identidad, calidad y región.
+          </h1>
+          <p>
+            Nuestro catálogo está diseñado para conectar con quienes buscan
+            fragancias únicas, servicio cercano y una experiencia auténtica
+            hecha en Ibagué.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature">
+              <img
+                src="img/FraganciasSelecionadas.png"
+                alt=""
+                class="feature-icon"
+                loading="lazy"
+                height="60px"
+                width="30px"
+              />
+              <h4>Fragancias seleccionadas</h4>
+              <p>
+                Curaduría exclusiva de perfumes de alta calidad, con carácter y
+                personalidad.
+              </p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="img/InspiracionTolimense.png"
+                alt=""
+                class="feature-icon"
+                loading="lazy"
+                height="60px"
+                width="67px"
+              />
+              <h4>Inspiración tolimense</h4>
+              <p>
+                Aromas que evocan paisajes, raíces y esencia local con orgullo
+                regional.
+              </p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="img/AtencionCercana.png"
+                alt=""
+                class="feature-icon"
+                loading="lazy"
+                height="60px"
+                width="54px"
+              />
+              <h4>Atención cercana</h4>
+              <p>
+                Te asesoramos con agilidad, calidez y enfoque en lo que
+                realmente buscas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESTACADOS -->
+      <section
+        class="personas"
+        aria-label="Segmentos de cliente y fragancias"
+        id="destacados"
+      >
+        <div class="container">
+          <h2 class="eyebrow-fragancias">Nuestros perfumes destacados</h2>
+          <h1 class="fragancias-title">
+            Encuentra el aroma perfecto según tu estilo, edda y personalidad.
+          </h1>
+          <p>
+            Te presentamos una selección curada para cada tipo de cliente, con
+            fragancias que hablan por ti.
+          </p>
+
+          <!-- Persona: Hombre Audaz -->
+          <div class="persona-group">
+            <div class="persona-header-hombre">
+              <h4>Hombre Audaz</h4>
+              <p>
+                Para el joven arriesgado, atrevido y con personalidad vibrante.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-group"-->
+
+          <!-- Persona: Mujer Encantadora -->
+          <div class="persona-group">
+            <div class="persona-header-mujer">
+              <h4>Mujer Encantadora</h4>
+              <p>
+                Para la joven soñadora, dulce, alegre y naturalmente
+                irresistible.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-group"-->
+
+          <!-- Persona: Hombre Seguro -->
+          <div class="persona-group">
+            <div class="persona-header-hombre">
+              <h4>Hombre Seguro</h4>
+              <p>
+                Para el hombre adulto moderno que sabe lo que quiere y cómo lo
+                expresa.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-group"-->
+
+          <!-- Persona: Mujer Decidida -->
+          <div class="persona-group">
+            <div class="persona-header-mujer">
+              <h4>Mujer Decidida</h4>
+              <p>
+                Para la mujer adulta contemporánea, elegante, activa y
+                auténtica.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-group"-->
+
+          <!-- Persona: Hombre Distinguido -->
+          <div class="persona-group">
+            <div class="persona-header-hombre">
+              <h4>Hombre Distinguido</h4>
+              <p>
+                Para el hombre maduro que proyecta presencia, carácter y estilo
+                clásico.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card hombre">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-hombre">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-group"-->
+
+          <!-- Persona: Mujer Sofisticada -->
+          <div class="persona-group">
+            <div class="persona-header-mujer">
+              <h4>Mujer Sofisticada</h4>
+              <p>
+                Para la mujer madura que deja huella con su elegancia y
+                seguridad.
+              </p>
+            </div>
+
+            <div class="carrousel">
+              <button class="btn-carrusel prev" aria-label="Anterior">‹</button>
+
+              <div class="contenido-carrousel">
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>1</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>2</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>3</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>4</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+
+                <article class="card mujer">
+                  <div class="card-image">
+                    <img
+                      src="img/Calvin Klein Eternity Summer.jpg"
+                      alt="Calvin Klein Eternity Summer"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-content-mujer">
+                    <h5>5</h5>
+                    <p>Frescura cálida con toque tropical.</p>
+                  </div>
+                </article>
+              </div>
+              <!--class="contenido-carrousel"-->
+
+              <button class="btn-carrusel next" aria-label="Siguiente">
+                ›
+              </button>
+            </div>
+            <!--class="carrousel"-->
+          </div>
+          <!--class="persona-gSofisticada-->
+        </div>
+        <!--class="container"-->
+      </section>
+      <!--class="personas"-->
+
+      <!-- Contacto / Formulario -->
+      <section
+        class="contact"
+        id="contacto"
+        aria-label="Contacto y asesoría personalizada"
+      >
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Conecta con tu fragancia.</h3>
+              <p>Conecta con tu fragancia.</p>
+              <dl class="contact-data">
+                <div class="info-item">
+                  <dt>Teléfono:</dt>
+                  <dd>+57 321 497 8179</dd>
+                </div>
+                <div class="info-item">
+                  <dt>Email:</dt>
+                  <dd>perfumeria@miverne.com</dd>
+                </div>
+                <div class="info-item">
+                  <dt>Dirección:</dt>
+                  <dd>Casa 3 Barrio Miramar, Ibagué</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="contact-form" id="escribenos">
+              <form
+                aria-label="Formulario de contacto"
+                action="https://formsubmit.co/santi1315ortiz@gmail.com"
+                method="POST"
+              >
+                <!-- Redirección después del envío -->
+                <!-- <input
+                  type="hidden"
+                  name="_next"
+                  value="https://tusitio.com/gracias.html" -->
+                <!-- Desactivar CAPTCHA (requiere cuenta y verificación) -->
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    placeholder="Nombre Apellido"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="perfumeria@miverne.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    placeholder="+57 312 345 6789"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje aquí"
+                  ></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn secondary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="redes-sociales" aria-label="Redes Sociales de Miverne">
+        <h1>Nuestras Redes Sociales</h1>
+        <div class="redes-icons">
+          <a
+            href="https://www.instagram.com/miverneibague/"
+            aria-label="Instagram de Miverne"
+            target="_blank"
+          >
+            <img
+              src="img/Instagram.png"
+              height="80px"
+              width="80px"
+              alt="Instagram"
+            />
           </a>
         </div>
+        <div>
+          <div class="logo" aria-label="Miverne Perfumería">
+            <!-- Reemplazar con logo real -->
+            <div class="logo-footer">
+              <a href="#inicio">
+                <img
+                  src="img/MainLogoBrand2.png"
+                  height="200px"
+                  width="686.68px"
+                  alt="Logo de Miverne"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-label="Pie de página">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Miverne Perfumería. Todos los derechos reservados.</p>
       </div>
-      </div>
-    </section>
+    </footer>
 
-
-
-  </main>
-
-
-
-  <!-- Footer -->
-  <footer class="site-footer" aria-label="Pie de página">
-    <div class="footer-bottom">
-      <p> &copy; 2025 Miverne Perfumería. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-
-
-  <script src="Js/carrousel.js" defer></script>
-
-</body>
+    <script src="Js/carrousel.js" defer></script>
+  </body>
 </html>
