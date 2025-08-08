@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_mod_fixed.css" />
   </head>
 
   <body>
@@ -55,7 +55,10 @@
             </a>
           </div>
         </div>
-        <nav class="main-nav" aria-label="Navegación principal">
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+  ☰
+</button>
+<nav class="main-nav" aria-label="Navegación principal">
           <ul>
             <li><a href="#nosotros">NOSOTROS</a></li>
             <li><a href="#destacados">DESTACADOS</a></li>
@@ -880,5 +883,33 @@
     </footer>
 
     <script src="Js/carrousel.js" defer></script>
-  </body>
+  
+<!-- AJUSTE RESPONSIVE MENU Y BOTONES -->
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".main-nav");
+  const wpHeader = document.querySelector(".whatsapp-header");
+
+  toggle.addEventListener("click", () => {
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", !expanded);
+    nav.classList.toggle("active");
+  });
+
+  function ajustarMenu() {
+    if (window.innerWidth < 768) {
+      wpHeader.style.display = "none";
+      toggle.style.display = "block";
+    } else {
+      wpHeader.style.display = "inline-flex";
+      toggle.style.display = "none";
+      nav.classList.remove("active");
+    }
+  }
+
+  window.addEventListener("resize", ajustarMenu);
+  window.addEventListener("DOMContentLoaded", ajustarMenu);
+</script>
+
+</body>
 </html>
