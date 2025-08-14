@@ -189,7 +189,7 @@ body {
   justify-content: center;
   min-height: 60vh; /* 👈 Asegura que tenga altura completa */
   padding: var(--space-xl) 0;
-  background-image: url('img/Nevado_del_Tolima.jpg');
+  background-image: url('img//Background/Nevado_del_Tolima.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -438,7 +438,7 @@ body {
 }
 
 .card-image img {
-  width: 84%;
+  width: 100%;
   display: block;
   object-fit: cover;
   border-radius: 25px;
@@ -671,6 +671,17 @@ body {
    Responsive / Breakpoints
    ================================ */
 /* Mobile-first: por defecto ya aplica para 320px en adelante */
+
+@media (max-width: 640px) {
+  .contenido-carrousel {
+    grid-auto-columns: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
 
 /* Tablet y pantallas medianas (>=640px) */
 @media (min-width: 640px) {

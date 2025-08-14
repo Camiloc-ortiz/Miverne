@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = container.querySelector('.contenido-carrousel');
     const nextBtn = container.querySelector('.btn-carrusel.next');
     const prevBtn = container.querySelector('.btn-carrusel.prev');
-    const scrollAmount = carousel.offsetWidth * 0.8;
+    const card = carousel.querySelector('.card');
+    const scrollAmount = card ? card.offsetWidth + 16 : 250;
 
     if (!carousel || !nextBtn || !prevBtn) return;
 
